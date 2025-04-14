@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { LoginService, RegisterService } from '../services/AuthService';
+import { LoginService } from '../services/AuthService';
 import { Alert } from '@mui/material';
 
 

@@ -49,7 +49,7 @@ const TodoList = () => {
        
         {
           field: "Message",
-          headerName: "Todo Lists",
+          headerName: "Work Lists",
           flex:1,
           editable:true
         },
@@ -166,7 +166,7 @@ const TodoList = () => {
     }}>
 
          <Button onClick={()=>openchange(true)} variant="contained" color="primary">
-          Create TodoList
+          Create WorkList
         </Button>
         
         <Typography
@@ -174,7 +174,7 @@ const TodoList = () => {
         component='h3'
         sx={{textAlign:'center',mt:3,mb:3}}
         >
-            TodoList
+            WorkList
         </Typography>
         <Button onClick={handleLogout} variant="contained" color="secondary">
           Logout
