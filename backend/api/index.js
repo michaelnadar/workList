@@ -1,12 +1,12 @@
 // routes/todoRoutes.js
 const express = require('express');
 require('dotenv').config();
-const { getToDoListsByUserId,createWorkList,updateWorkList ,deleteSingleWorkList} = require('./controllers/workListController');
-const { register ,login} = require('./controllers/userController');
+const { getToDoListsByUserId,createWorkList,updateWorkList ,deleteSingleWorkList} = require('../controllers/workListController');
+const { register ,login} = require('../controllers/userController');
 const verifyToken = require('./middleware/auth');
 const app = express();
 const PORT = process.env.PORT || 3000;
-const db = require('./models'); // 👈 Import models and DB connection
+const db = require('../models'); // 👈 Import models and DB connection
 const cors = require('cors');
 app.use(cors());
 
